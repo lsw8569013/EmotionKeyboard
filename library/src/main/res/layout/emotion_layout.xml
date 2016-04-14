@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1080p_1"
+        android:background="@color/color_444444" />
+
+    <com.example.sunxiaodong.library.widget.emotion.EmotionDisplayView
+        android:id="@+id/emotion_display_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/emotion_indicator"
+        android:orientation="vertical" />
+
+    <com.example.sunxiaodong.library.widget.emotion.EmotionIndicator
+        android:id="@+id/emotion_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/second_divide_line"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dimen_1080p_30" />
+
+    <View
+        android:id="@+id/second_divide_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1080p_1"
+        android:layout_above="@+id/emotion_tool_view"
+        android:background="@color/color_444444" />
+
+    <com.example.sunxiaodong.library.widget.emotion.EmotionToolView
+        android:id="@+id/emotion_tool_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1080p_96"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" />
+
+</RelativeLayout>
