@@ -32,15 +32,18 @@ public abstract class DynamicHeightLayout extends KeyBoardSizeWatchLayout implem
 
     public DynamicHeightLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
+        init(context);
     }
 
     public DynamicHeightLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        init(context);
     }
 
     private void init(Context context) {
         mContext = context;
         mSoftKeyboardHeight = EmotionKeyboardUtils.getDefKeyboardHeight(mContext);
+        Log.i(SXD, TAG + "--init++mSoftKeyboardHeight:" + mSoftKeyboardHeight);
         addOnResizeListener(this);
     }
 
@@ -82,6 +85,8 @@ public abstract class DynamicHeightLayout extends KeyBoardSizeWatchLayout implem
 
     @Override
     public void OnSoftPop(int height) {//键盘弹出时，回调
+        Log.i(SXD, TAG + "--OnSoftPop++height:" + height);
+        Log.i(SXD, TAG + "--OnSoftPop++mSoftKeyboardHeight:" + mSoftKeyboardHeight);
         if (mSoftKeyboardHeight != height) {
             mSoftKeyboardHeight = height;
             EmotionKeyboardUtils.setDefKeyboardHeight(mContext, mSoftKeyboardHeight);

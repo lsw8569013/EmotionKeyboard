@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_fcfcfc"
+    android:orientation="vertical">
+
+    <com.example.sunxiaodong.library.widget.EmotionEditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_1080p_27"
+        android:layout_marginRight="@dimen/dimen_1080p_27"
+        android:layout_marginTop="@dimen/dimen_1080p_42"
+        android:background="@color/color_ffffff"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:minHeight="@dimen/dimen_1080p_162"
+        android:padding="@dimen/dimen_1080p_21"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/dimen_1080p_42" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1080p_150">
+
+        <ImageView
+            android:id="@+id/image_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_1080p_27"
+            android:src="@mipmap/ic_image" />
+
+        <ImageView
+            android:id="@+id/emotion_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_1080p_60"
+            android:layout_toRightOf="@id/image_btn"
+            android:src="@mipmap/ic_emotion" />
+
+        <TextView
+            android:id="@+id/send_btn"
+            android:layout_width="@dimen/dimen_1080p_180"
+            android:layout_height="@dimen/dimen_1080p_78"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_1080p_27"
+            android:background="@drawable/drawable_ffcd34_cca000_1080p_12px_selector"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:text="发表" />
+    </RelativeLayout>
+
+    <com.example.sunxiaodong.library.widget.FunctionLayout
+        android:id="@id/id_function_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+</LinearLayout>

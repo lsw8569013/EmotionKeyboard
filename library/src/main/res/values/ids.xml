@@ -4,4 +4,5 @@
     <item type="id" name="id_emotion_icon_item" />
     <item type="id" name="id_tool_item_left" />
     <item type="id" name="id_tool_item_right" />
+    <item type="id" name="id_function_layout"/>
 </resources>

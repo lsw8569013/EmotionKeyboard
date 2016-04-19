@@ -1,4 +1,7 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.github.w446108264'
 
 android {
     compileSdkVersion 23
@@ -24,5 +27,4 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.2.1'
     compile 'com.nineoldandroids:library:2.4.0'
     compile files('libs/universal-image-loader-1.9.5.jar')
-
 }
